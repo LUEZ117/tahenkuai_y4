@@ -370,7 +370,7 @@ def train(hyp, opt, device, tb_writer=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', type=str, default='yolov4.pt', help='initial weights path')
-    parser.add_argument('--cfg', type=str, default='models/yolov4.yaml', help='model.yaml path')
+    parser.add_argument('--cfg', type=str, default='cfg/yolov4.cfg', help='model.yaml path')
     parser.add_argument('--data', type=str, default='data/dataset.yaml', help='data.yaml path')
     parser.add_argument('--epochs', type=int, default=300)
     parser.add_argument('--batch-size', type=int, default=16, help='total batch size for all GPUs')
